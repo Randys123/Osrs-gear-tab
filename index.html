@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSRS Gear Tab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OSRS Gear Tab</h1>
+
+        <div class="gear-tab">
+            <!-- Gear slots (Images will be injected here by JavaScript) -->
+            <div class="gear-slot" id="helmet-slot">
+                <img class="gear-img" src="images/helmets/helm1.png" alt="Helmet 1" onclick="toggleHighlight('helmet-slot', this)">
+                <img class="gear-img" src="images/helmets/helm2.png" alt="Helmet 2" onclick="toggleHighlight('helmet-slot', this)">
+            </div>
+            <div class="gear-slot" id="chest-slot">
+                <img class="gear-img" src="images/chests/chest1.png" alt="Chest 1" onclick="toggleHighlight('chest-slot', this)">
+                <img class="gear-img" src="images/chests/chest2.png" alt="Chest 2" onclick="toggleHighlight('chest-slot', this)">
+            </div>
+            <div class="gear-slot" id="weapon-slot">
+                <img class="gear-img" src="images/weapons/weapon1.png" alt="Weapon 1" onclick="toggleHighlight('weapon-slot', this)">
+                <img class="gear-img" src="images/weapons/weapon2.png" alt="Weapon 2" onclick="toggleHighlight('weapon-slot', this)">
+            </div>
+            <!-- Add other gear slots as needed -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
